@@ -28,7 +28,7 @@
     - [Ссылка](https://github.com/DL-teammm/matching_resumes_with_vacancies/tree/main/notebooks/scraping_datraset) на код
    <div class="row" style="display: flex;">
       <div class="column" style="display: flex; padding: 5px;">
-            <img inline src="./imgs/dataset.jpg" alt="собранный датасет" width="1000"/>
+            <img inline src="./imgs/dataset.jpg" alt="собранный датасет" width=1000/>
       </div>
     </div>
 
