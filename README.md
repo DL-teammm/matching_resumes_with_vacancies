@@ -36,6 +36,19 @@
 
 Для сравнения качества построенных разными подходами эмбеддингов были построены графики метрик качества (при варьировании параметра k -- числа классов) для задачи кластеризации: SSE и Davies-Bouldin Index. Полученные графики представлены ниже:
 
+1. TF-IDF:
+    <div class="row" style="display: flex;">
+      <div class="column" style="display: flex; padding: 5px;">
+            <img inline src="./imgs/k_sse_tf_idf.png" alt="SSE, TF-IDF" width="800"/>
+      </div>
+    </div>
+
+    <div class="row" style="display: flex;">
+      <div class="column" style="display: flex; padding: 5px;">
+            <img inline src="./imgs/k_db_index_tf_idf.png" alt="DB Index, TF-IDF" width="800"/>
+      </div>
+    </div>
+
 ...
 
 Ноутбуки с проведёнными экспериментами лежат в папке ```notebooks```.
