@@ -149,7 +149,7 @@ class Resume:
 class ResumeGetter:
     """Запускает процесс скачивания резюме"""
     def __init__(self):
-        self.dir_path = "Y:/OpenCV/HH/HH_parcer-master/data/saved_resumes/"
+        self.dir_path = "/data/saved_resumes/"
         self.resume_storage = os.listdir(path=self.dir_path)
         self.resume_dict_storage = []
 
@@ -177,7 +177,7 @@ class ResumeGetter:
                 
                 print('*' * 20)
             counter += 1
-        data.to_csv("Y:/OpenCV/HH/HH_parcer-master/resumes.csv")
+        data.to_csv("/resumes.csv")
         return
 
 
