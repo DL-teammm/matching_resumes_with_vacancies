@@ -24,7 +24,7 @@ class HHResumeDownloader:
 
     def download_pages(self):
         """Запускает процесс скачивания страниц"""
-        with open('Y:/OpenCV/HH/HH_parcer-master/id_list.txt', 'r') as id_list:
+        with open('/id_list.txt', 'r') as id_list:
             rep = 0
             for resume_id in id_list:
                 resume_id = resume_id.strip()
@@ -54,5 +54,5 @@ class HHResumeDownloader:
 
 
 if __name__ == "__main__":
-    hh_resume_downloader = HHResumeDownloader("https://hh.ru/resume/{0}", "Y:/OpenCV/HH/HH_parcer-master/data/saved_resumes/", 1560, timeout=5)
+    hh_resume_downloader = HHResumeDownloader("/data/saved_resumes/", 1560, timeout=5)
     hh_resume_downloader.download_pages()
