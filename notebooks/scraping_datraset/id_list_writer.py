@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 def write_links(page: str, pattern: str, start: int, end: int):
     """Осуществляет поиск ссылок на резюме в скаченных страницах"""
     for i in range(start, end + 1):
-        with open(page.format(i), 'r', encoding="utf-8") as resume_request, open('Y:/OpenCV/HH/HH_parcer-master/id_list.txt', 'a') as id_list:
+        with open(page.format(i), 'r', encoding="utf-8") as resume_request, open('/id_list.txt', 'a') as id_list:
             soup = BeautifulSoup(resume_request, features="lxml")
             id_lst = soup.find_all('a', {'data-qa': "serp-item__title"})
             
@@ -14,4 +14,4 @@ def write_links(page: str, pattern: str, start: int, end: int):
                 id_list.write('\n')
 
 
-write_links('Y:/OpenCV/HH/HH_parcer-master/data/resume_page_{0}.html', r'resume\/(.+)\?', 0, 1000)
+write_links('/data/resume_page_{0}.html', r'resume\/(.+)\?', 0, 1000)
