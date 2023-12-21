@@ -51,5 +51,5 @@ class HHDownloader:
 
 if __name__ == "__main__":
     start_url = "https://spb.hh.ru/search/resume?text=&no_magic=true&ored_clusters=true&order_by=relevance&items_on_page=100&search_period=365&logic=normal&pos=full_text&exp_period=all_time&exp_company_size=any&hhtmFrom=account_login"
-    hh_downloader = HHDownloader(start_url, "Y:/OpenCV/HH/HH_parcer-master/data/", timeout=20)
+    hh_downloader = HHDownloader(start_url, "/data/", timeout=20)
     hh_downloader.download_pages(0, 1000)
