@@ -137,4 +137,4 @@
 
 ### Демо
 
-Демо с работой веб-сервиса можно посмотреть здесь: ...
+Демо с работой веб-сервиса можно посмотреть здесь: [google-drive-folder](https://drive.google.com/drive/folders/1poDuTgxTouYFbU_5ke4M4dUramMySICs?usp=sharing).
